@@ -325,7 +325,7 @@ def clean_installation():
             conf.set_config('Cassandra', 'partitioner', 'murmur')
             conf.set_config('Cassandra', 'vnodes', 'True')
         else:
-            logger.exe('sudo apt-get install -y python-cql dsc12')
+            logger.exe('sudo apt-get install -y python-cql dsc20')
             conf.set_config('AMI', 'package', 'dsc12')
             conf.set_config('Cassandra', 'partitioner', 'murmur')
             conf.set_config('Cassandra', 'vnodes', 'True')
